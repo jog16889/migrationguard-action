@@ -26,7 +26,7 @@ jobs:
 | `base` | pull request base | Git ref to compare with. On `push`, every SQL file is checked. |
 | `paths` | `.` | Space-separated files or directories to check. |
 | `sarif` | `false` | Also upload results to GitHub code scanning (needs `security-events: write`). |
-| `version` | `1.3.1` | MigrationGuard CLI version. |
+| `version` | `1.4.0` | MigrationGuard CLI version. |
 
 A `.migrationguard.yml` at the repository root sets the dialect, minimum severity, disabled rules and
 ignored paths. In-source suppressions (`-- migrationguard:disable RULE_ID`) work as in the IDE.
@@ -43,7 +43,7 @@ which you review in IntelliJ IDEA Ultimate or DataGrip. Pro includes a 7-day fre
 Any runner with Java 21 can use the CLI directly:
 
 ```bash
-curl -fsSL https://technofystore-legal.jog16889.workers.dev/cli/migrationguard-cli-1.3.1.jar -o migrationguard-cli.jar
+curl -fsSL https://technofystore-legal.jog16889.workers.dev/cli/migrationguard-cli-1.4.0.jar -o migrationguard-cli.jar
 java -jar migrationguard-cli.jar check --base origin/main
 ```
 
